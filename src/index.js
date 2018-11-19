@@ -11,7 +11,7 @@ const pubsub = new PubSub()
 
 //resolver (server object)
 const server = new GraphQLServer({
-  typeDefs: './src/schema.graphql', //path must relative to root directory
+  typeDefs: './src/schema.graphql', //path must relative to root directory, can also copy and paste the schema as string to here
   resolvers: {
     //pass resolver, must match the name for Query, Mutation, Subscriber
     Query,
